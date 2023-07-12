@@ -1,3 +1,7 @@
+html {
+    overflow: hidden;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -50,6 +54,20 @@ h1, h2, h3 {
     font-family: 'Covered By Your Grace', cursive;
     position: absolute;
     right: 10%;
+}
+
+p {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+p a {
+    color: #0077ff;
 }
 
 svg {
@@ -142,6 +160,10 @@ path {
         right: 20%;
         margin-top: 20px;
     }
+
+    p {
+        font-size: 25px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -172,6 +194,10 @@ path {
     .name {
         font-size: 64px;
         right: 25%;
+    }
+
+    p {
+        font-size: 25px;
     }
 
     #triangle-7 {
