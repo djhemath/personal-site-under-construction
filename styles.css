@@ -1,0 +1,215 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #161616;
+    color: #F1F1F1;
+    font-family: 'Lacquer', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.name {
+    font-size: 36px;
+    right: 20%;
+    margin-top: 20px;
+    /* color: #2cff87; */
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+.name-container {
+    position: relative;
+}
+
+.name {
+    font-family: 'Covered By Your Grace', cursive;
+    position: absolute;
+    right: 10%;
+}
+
+svg {
+    position: absolute;
+}
+
+path {
+    fill: #333333;
+}
+
+#triangle-1 {
+    top: 10%;
+    left: 7%;
+    transform: rotate(45deg);
+}
+
+#triangle-2 {
+    top: 9%;
+    right: 25%;
+    transform: rotate(-10deg);
+}
+
+#triangle-3 {
+    bottom: 35%;
+    left: 4%;
+    transform: rotate(-10deg);
+}
+
+#triangle-4 {
+    bottom: 15%;
+    left: 30%;
+    transform: rotate(43deg);
+}
+
+#triangle-5 {
+    bottom: 10%;
+    right: 10%;
+    transform: rotate(70deg);
+}
+
+#triangle-6 {
+    bottom: 2%;
+    left: 5%;
+    transform: rotate(55deg);
+}
+
+#triangle-7 {
+    top: 22%;
+    right: 75%;
+    transform: rotate(120deg);
+}
+
+#triangle-8 {
+    bottom: 43%;
+    left: 5%;
+    transform: rotate(60deg);
+}
+
+#triangle-9 {
+    top: 0%;
+    right: -3%;
+    transform: rotate(90deg);
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        height: 90vh;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+    
+    h2 {
+        font-size: 36px;
+    }
+    
+    h3 {
+        font-size: 30px;
+    }
+
+    .name {
+        font-size: 60px;
+        right: 20%;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        height: 80vh;
+    }
+    
+    .container {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 54px;
+    }
+    
+    h2 {
+        font-size: 50px;
+    }
+    
+    h3 {
+        font-size: 40px;
+    }
+    
+    .name-container {
+        position: relative;
+    }
+    
+    .name {
+        font-size: 64px;
+        right: 25%;
+    }
+
+    #triangle-7 {
+        top: 10%;
+        right: 75%;
+        transform: rotate(120deg);
+    }
+
+    #triangle-8 {
+        bottom: 43%;
+        left: 16%;
+        transform: rotate(60deg);
+    }
+
+    #triangle-9 {
+        top: 2%;
+        right: 1%;
+        transform: rotate(90deg);
+    }
+}
+
+/* From codepen - https://codepen.io/master_vikash/pen/jOEZNZN */
+
+.text-effect{
+    color: #fff6a9;
+    font-family: 'Sacramento', cursive;
+    text-transform: capitalize;
+    text-shadow: 0 0 5px #00ff73, 0 0 15px #00ff73, 0 0 20px #00ff73, 0 0 40px #00ff73, 0 0 60px #00ff0d, 0 0 10px #ff8d00, 0 0 98px #00ff0d;
+    animation: animate 2s ease-in-out infinite;
+}
+
+@keyframes animate{
+    20%, 24%, 55%{
+        color: #111;
+        text-shadow: none;
+    }
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100%{
+        color: #fff6a9;
+        text-shadow: 0 0 5px #00ff73, 0 0 15px #00ff73, 0 0 20px #00ff73, 0 0 40px #00ff73, 0 0 60px #00ff0d, 0 0 10px #ff8d00, 0 0 98px #00ff0d;
+    }
+}
